@@ -176,6 +176,24 @@ main > section {
   margin-top:10px ;
 }
 
+/* sponspors related styles */
+
+.sponspors-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+
+}
+
+.sponsore-companise{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsore-companise img{
+  filter: grayscale(100%);
+}
+
 /* responsive medis query */
 
 @media screen and (max-width:576px) {
@@ -185,8 +203,10 @@ main > section {
   .some-facts {
     flex-direction: column;
   }
+
  .teams-img-container,
- .facts-container{
+ .facts-container,
+ .sponsore-companise{
   grid-template-columns: repeat(1 , 1fr);
  }
 
@@ -194,12 +214,17 @@ main > section {
  .our-features{
   margin-left: 20px;
  }
-  .facts-container{
+
+  .facts-container,
+  .sponsore-companise{
   justify-items: center;
+  gap: 24px;
  }
+
  .head{
   margin-left: 20px;
  }
+
  .facts-discription{
   width: 400px;
   margin-left: 20px;
@@ -226,12 +251,19 @@ margin-right: 50px;
    .head{
     text-align: center;
    }
-   .facts-container{
-    margin-left: 50px;
+   .facts-container,
+   .sponsore-companise{
+    margin-left: 70px;
     margin-right: 50px;
+    gap: 20px;
+   
   
 
     grid-template-columns: repeat(2,1fr);
+   }
+   .sponsore-companise{
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
    }
   
 }
